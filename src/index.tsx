@@ -51,7 +51,14 @@ export class StarRating extends Component<StarRatingProps, StarRatingState> {
         return (
             <div>
                 {ratingStarsElements.map((el, i) => (
-                    <span key={i}>{el}</span>
+                    <span
+                        style={{
+                            cursor: "pointer",
+                        }}
+                        key={i}
+                    >
+                        {el}
+                    </span>
                 ))}
             </div>
         );
